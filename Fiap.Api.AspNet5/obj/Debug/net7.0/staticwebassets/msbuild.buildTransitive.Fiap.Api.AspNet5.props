@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Fiap.Api.AspNet5.props" />
+</Project>

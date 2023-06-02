@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CUqixy0WkpWYrpxW42NWquMGr0cKVzCFdmeTq7hQ5bg=",
+  "Source": "Fiap.Api.AspNet5",
+  "BasePath": "_content/Fiap.Api.AspNet5",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

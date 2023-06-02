@@ -1,4 +1,9 @@
 
+using Fiap.Api.AspNet5.Data;
+using Fiap.Api.AspNet5.Repository;
+using Fiap.Api.AspNet5.Repository.Interface;
+using Microsoft.EntityFrameworkCore;
+
 namespace Fiap.Api.AspNet5
 {
     public class Program
@@ -8,6 +13,18 @@ namespace Fiap.Api.AspNet5
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+            //----------------------------------------------------------------
+            var connectionString = builder.Configuration.GetConnectionString("databaseUrl");
+            builder.Services.AddDbContext<DataContext>(
+                opt => opt.UseSqlServer(connectionString).EnableSensitiveDataLogging(true));
+            //----------------------------------------------------------------
+
+            //Injecao de Dependencias
+            //----------------------------------------------------------------
+            builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+            //----------------------------------------------------------------
+
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
