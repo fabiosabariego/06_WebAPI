@@ -23,6 +23,7 @@ namespace Fiap.Api.AspNet5
             //Injecao de Dependencias
             //----------------------------------------------------------------
             builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+            builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             //----------------------------------------------------------------
 
 

@@ -18,7 +18,6 @@ namespace Fiap.Api.AspNet5.Models
         [MaxLength(30)]
         public string Senha { get; set; }
 
-        [Required]
         [MaxLength(30)]
         public string Regra { get; set; }
 
