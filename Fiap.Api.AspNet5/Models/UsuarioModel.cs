@@ -19,7 +19,7 @@ namespace Fiap.Api.AspNet5.Models
         public string Senha { get; set; }
 
         [MaxLength(30)]
-        public string Regra { get; set; }
+        public string? Regra { get; set; }
 
         public UsuarioModel()
         {

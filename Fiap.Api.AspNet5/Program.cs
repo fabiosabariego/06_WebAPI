@@ -2,7 +2,10 @@
 using Fiap.Api.AspNet5.Data;
 using Fiap.Api.AspNet5.Repository;
 using Fiap.Api.AspNet5.Repository.Interface;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Fiap.Api.AspNet5
 {
@@ -24,6 +27,34 @@ namespace Fiap.Api.AspNet5
             //----------------------------------------------------------------
             builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
             builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            //----------------------------------------------------------------
+
+            //Autenticacao
+            //----------------------------------------------------------------
+            #region autenticacao
+            var key = Encoding.ASCII.GetBytes(Settings.Secret);
+            builder.Services.AddAuthentication
+                ( x =>
+                    {
+                        x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                        x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                    } 
+                )
+                .AddJwtBearer
+                ( j =>
+                    {
+                        j.RequireHttpsMetadata = false;
+                        j.SaveToken = true;
+                        j.TokenValidationParameters = new TokenValidationParameters
+                        {
+                            ValidateIssuerSigningKey = true,
+                            IssuerSigningKey = new SymmetricSecurityKey(key),
+                            ValidateIssuer = false,
+                            ValidateAudience = false
+                        };
+                    }
+                );
+            #endregion
             //----------------------------------------------------------------
 
 
