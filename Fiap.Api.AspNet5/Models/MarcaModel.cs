@@ -6,7 +6,6 @@ namespace Fiap.Api.AspNet5.Models
     [Table("Marcas")]
     public class MarcaModel
     {
-
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MarcaId { get; set; }

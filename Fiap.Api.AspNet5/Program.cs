@@ -27,6 +27,7 @@ namespace Fiap.Api.AspNet5
             //----------------------------------------------------------------
             builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
             builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            builder.Services.AddScoped<IMarcaRepository, MarcaRepository>();
             //----------------------------------------------------------------
 
             //Autenticacao
