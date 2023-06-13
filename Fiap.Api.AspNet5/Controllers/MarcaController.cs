@@ -48,7 +48,7 @@ namespace Fiap.Api.AspNet5.Controllers
                 return Ok(marca);
             }
         }
-
+        
         [HttpPost]
         public ActionResult<MarcaModel> PostInsert([FromBody] MarcaModel marcaModel)
         {
@@ -74,6 +74,7 @@ namespace Fiap.Api.AspNet5.Controllers
             }
         }
 
+        
         [HttpPut("{id:int}")]
         public ActionResult<MarcaModel> PutUpdate([FromBody] MarcaModel marcaModel, [FromRoute] int id)
         {
@@ -98,13 +99,13 @@ namespace Fiap.Api.AspNet5.Controllers
             }
         }
 
-        [HttpGet("{id:int}")]
+        
+        [HttpDelete("{id:int}")]
         public ActionResult<MarcaModel> Delete([FromRoute] int id)
         {
             marcaRepository.Delete(id);
             return NoContent();
         }
-
 
     }
 }
