@@ -36,12 +36,12 @@ namespace Fiap.Api.AspNet5.Models
 
         public int CategoriaId { get; set; }
         [ForeignKey("CategoriaId")]
-        public CategoriaModel Categoria { get; set; }
+        public CategoriaModel? Categoria { get; set; }
 
 
         public int MarcaId { get; set; }
         [ForeignKey("MarcaId")]
-        public MarcaModel Marca { get; set; }
+        public MarcaModel? Marca { get; set; }
 
 
         public ProdutoModel()

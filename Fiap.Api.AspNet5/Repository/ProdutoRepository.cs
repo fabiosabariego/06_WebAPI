@@ -21,7 +21,7 @@ namespace Fiap.Api.AspNet5.Repository
 
         public ProdutoModel FindById(int id)
         {
-            return _dataContext.Produtos.FirstOrDefault(x => x.ProdutoId == id);
+            return _dataContext.Produtos.Include(c => c.Categoria).Include(m => m.Marca).FirstOrDefault(x => x.ProdutoId == id);
         }
 
         public int Insert(ProdutoModel produtoModel)
@@ -43,6 +43,17 @@ namespace Fiap.Api.AspNet5.Repository
 
             _dataContext.Produtos.Remove(produto);
             _dataContext.SaveChanges();
+        }
+
+        public int Count()
+        {
+            return _dataContext.Produtos.Count();
+        }
+
+        public IList<ProdutoModel> FindAll(int pagina, int tamanho)
+        {
+            var lista = _dataContext.Produtos.Skip(tamanho * pagina).Take(tamanho).ToList();
+            return lista;
         }
     }
 }

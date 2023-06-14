@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fiap.Api.AspNet5</name>
+    </assembly>
+    <members>
+        <member name="M:Fiap.Api.AspNet5.ConfigureSwaggerOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Fiap.Api.AspNet5.ConfigureSwaggerOptions"/> class.
+            </summary>
+            <param name="provider">The <see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider">provider</see> used to generate Swagger documents.</param>
+        </member>
+        <member name="M:Fiap.Api.AspNet5.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:Fiap.Api.AspNet5.Controllers.ProdutoController.Get(System.Int32,System.Int32)">
+            <summary>
+                Resumo do Metodo GET da API de Produto
+            </summary>
+            <param name="pagina"></param>
+            <param name="tamanho"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Fiap.Api.AspNet5.Migrations.Inicial">
+            <inheritdoc />
+        </member>
+        <member name="M:Fiap.Api.AspNet5.Migrations.Inicial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Fiap.Api.AspNet5.Migrations.Inicial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Fiap.Api.AspNet5.Migrations.Inicial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

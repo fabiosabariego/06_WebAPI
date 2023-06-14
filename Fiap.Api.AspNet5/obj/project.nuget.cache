@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WFffvaECjiR00N5io12UI/d0gKrj4tU7RDoZ0kQOwzxFXvLQRb0oOy7uzTZrE5saK00tpjprWdEerCFXCr6Rag==",
+  "dgSpecHash": "uCbp6RWvy0Imq8d2m41M8txF8sxTx8kpsyC4TtWJdYj9/Ev2U1f6Ju5LATNBOK70W0YIwwvOA0sfwNQf5Kprpw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fabio\\Documents\\GitHub\\06_WebAPI\\Fiap.Api.AspNet5\\Fiap.Api.AspNet5.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,8 @@
     "C:\\Users\\Fabio\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Fabio\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.2.0\\microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "C:\\Users\\Fabio\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\Fabio\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
+    "C:\\Users\\Fabio\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\5.1.0\\microsoft.aspnetcore.mvc.versioning.apiexplorer.5.1.0.nupkg.sha512",
     "C:\\Users\\Fabio\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\Fabio\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\Fabio\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
